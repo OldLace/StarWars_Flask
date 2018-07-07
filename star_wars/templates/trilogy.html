@@ -1,12 +1,31 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" /> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="./../static/images/favicon1.ico" type="image/x-icon">
+    <audio autoplay>
+        <source src="./../static/audio/R2D2.mp3" type="audio/mpeg">
+    </audio>
+    
+    <title>Star Wars: A Fan Site</title>
 </head>
+<nav>
+    <ul>
+        <li><a href="/"></li>
+        <li><img class="logo" src="{{ url_for('static', filename='./images/rebelalliance.jpg') }}" /></a></li>
+        <li><a href="/trilogy">Original Trilogy</a></li>
+        <li><a href="/prequels">Prequels</a></li>
+        <li><a href="/discussion">Forum</a></li>
+    </ul>
+</nav>
 <body>
+    <form action="/comments" method="POST">
+    <textarea input name="commentsconcerns" value="commentsconcerns" placeholder="Search your feelings..." row="12" cols="35"></textarea>
+    
+    </form>
     
 </body>
 </html>

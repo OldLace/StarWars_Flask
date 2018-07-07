@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,37 +22,3 @@
         <li><a href="/discussion">Forum</a></li>
     </ul>
 </nav>
-<body>
-   <div class="big"> 
-        <img src="./../static/images/starwars.jpg">
-        <h1 class="splash">A Fan Site</h1>
-    </div>
-    <h2>My favorite Star Wars movie is {{empire['title']}}</h2>
-<table width:100%>  
-    <tr>
-        <caption>🌟 The Films of the Star Wars Universe 🌟</caption>
-    </tr> 
-  {% for i in range(length): %}
-  <td>  {%  print(film_data[i]['title']) %}</td>
-    {% endfor %}
-    
-
-</table>
-    <!-- <a href="/about">about</a>    -->
-    <br>
-    <div id="enter">
-            <form method="post" action="/trilogy">
-                <button id="lightside" class="btn success" value="Submit">Proceed</button>
-            </form>
-    </div>
-
-    <div id="enter_dark">
-            <form method="post" action="/prequels">
-                <button id="darkside" class="btn success" value="Submit">Proceed</button>
-            </form>
-    </div>
-
-
-</body>
-</html>
-

@@ -86,3 +86,26 @@ caption {
         background: crimson;
         color:whitesmoke
 }
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a:hover{
+    font-weight: 600;
+    color:limegreen
+}
+
+
+li a {
+    display: block;
+    color: yellow; 
+    padding: 12px 12px;
+    text-decoration: none;
+}
+.logo {
+    width: 55px;
+    height: 55px;
+}
