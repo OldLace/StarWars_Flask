@@ -19,13 +19,18 @@
         <li><a href="/trilogy">Original Trilogy</a></li>
         <li><a href="/prequels">Prequels</a></li>
         <li><a href="/discussion">Forum</a></li>
-    
     </ul>
 </nav>
 <body>
-    <form action="/discussion" method="POST">
-        <textarea input name="comment" placeholder="Search your feelings...(and then post them)" row="12" cols="35"></textarea>
+    <div class="posters">
+        <img src="../static/images/posters/starwars_min.jpeg" /></a></li>
+        <img src="../static/images/posters/empire_min.jpeg" /></a></li>
+        <img src="../static/images/posters/jedi_min.jpeg" /></a></li>
+    </div>
+    <form id="comment_form" action="/discussion" method="POST">
+        <input type="text" name="username" placeholder="Display Name">
         <br>
+        <textarea input name="comment" placeholder="Search your feelings...(and then post them)" row="12" cols="35"></textarea>
         <br>
         <button id="troll_button" name="Submit" size="16px" value="Submit"></button>
     </form>

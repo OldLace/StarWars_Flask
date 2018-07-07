@@ -4,6 +4,7 @@ import json
 import urllib.request
 import requests
 import json
+import datetime
 
 @app.route('/', methods = ['GET', 'POST'])
 def index():
@@ -23,7 +24,9 @@ def trilogy():
 def prequels():
     return render_template('prequels.html')
 
-@app.route('/discussion', methods = ['POST'])
+@app.route('/discussion', methods = ['GET','POST'])
 def forum():
+    username = request.form['username']
     comment = request.form['comment']
-    return render_template('discussion.html', comment = comment)
+    time = datetime.datetime.now()
+    return render_template('discussion.html', comment = comment, username = username, time = time)

@@ -1,7 +1,8 @@
-*{
+/* Global stylings */
+*{ 
     color:yellow;
     font-family: 'Open Sans', sans-serif;
-    cursor: pointer;
+    /* cursor: pointer; This was just a usablitiy nightmare */ 
 }
 
 
@@ -18,7 +19,7 @@
     text-align: center;
     z-index: 100;
  }
-
+/* Background image */
  body {
     background-image: url("./stars.png");
 }
@@ -50,6 +51,7 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+/* Button leftside index page */
 #lightside {
     float: left;
     border-color: #4CAF50;
@@ -77,6 +79,7 @@ caption {
     font-size: 20px;
 }
 
+/* Button on right side of index page */
 #enter_dark {
     float: right;
 }
@@ -90,6 +93,7 @@ caption {
         background: crimson;
         color:whitesmoke
 }
+/* Nav Bar */
 ul {
     list-style-type: none;
     text-decoration: none;
@@ -109,14 +113,17 @@ li a {
     padding: 12px 12px;
     text-decoration: none;
 }
+/* Logo on navbar */
 .logo {
     width: 55px;
     height: 55px;
 }
-textarea {
+/* The text area of the comment submission form */
+textarea { 
     background-color: grey;    
 }
-#troll_button{
+/* The submission button */
+#troll_button{ 
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -126,4 +133,11 @@ textarea {
     display: inline-block;
     font-size: 18px;
     margin: 4px 2px;
+}
+
+.posters {
+    margin-left: 30px;
+    display: inline;
+    /* width: 20pc; Was going to use width & height, but they're ignored with display:inline active */
+    /* height: 20pc; */
 }
