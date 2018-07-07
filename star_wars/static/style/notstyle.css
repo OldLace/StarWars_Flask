@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: 'star_jedi_hollowregular';
+    src: url('starjhol-webfont.woff2') format('woff2'),
+         url('starjhol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.splash {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    color: yellow;
+    z-index: 200;
+ }
+
+ h1 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.big {
+    z-index: 10;
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+    text-align: center;
+}
+.button {
+    background-color: #4CAF50;
+    size: 16px;
+}

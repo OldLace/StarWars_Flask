@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" /> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="shortcut icon" href="./../static/images/favicon1.ico" type="image/x-icon">
-<link rel="icon" href="./../static/images/favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="./../static/images/favicon1.ico" type="image/x-icon">
+    
     <title>Star Wars: A Fan Site</title>
 </head>
+<audio autoplay>
+    <source src="./../static/audio/R2D2.mp3" type="audio/mpeg">
+</audio>
 <body>
-    <h1>Star Wars: A Fan Site</h1>
-    <p>This is my first Flask app!!!!</p>
-    <p>IT'S WORKING!!!!!!!@!#$##</p>
+   <div class="big"> 
+        <img src="./../static/images/starwars.jpg">
+        <h1 class="splash">A Fan Site</h1>
+    </div>
     <h2>My favorite Star Wars movie is {{empire['title']}}</h2>
-   
-        
-  
-
+<table width:100%>  
+    <tr>
+        <caption>The Films of the Star Wars Universe</caption>
+    </tr> 
+  {% for i in range(length): %}
+  <td>  {%  print(film_data[i]['title']) %}</td>
+    {% endfor %}
+</table>
     <!-- <a href="/about">about</a>    -->
+    <br>
         <table>
             <form method="post" action="/second">
                 <input type="text" name="favorite">
                 <br><br>
-                <input type="submit" value="Submit">            </form>
+                <button class="btn success" value="Submit">Success</button>
+            </form>
         </table> 
 </body>
 </html>

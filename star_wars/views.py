@@ -11,7 +11,8 @@ def index():
     film_json = req.json()
     film_data = film_json['results']
     empire = film_data[5]
-    return render_template('/index.html', film_data = film_data, empire = empire)
+    length = len(film_data)
+    return render_template('/index.html', film_data = film_data, empire = empire, length = length)
 
 # @app.route('/ten', methods = ['GET', 'POST'])
 # def ten():
