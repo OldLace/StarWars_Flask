@@ -1,6 +1,7 @@
 *{
     color:yellow;
     font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
 }
 
 
@@ -37,7 +38,6 @@ background-image {
 
 button {
     z-index:50;
-    /* background-color: #4CAF50; */
     size: 36px;
 }
 
@@ -54,6 +54,8 @@ button {
     float: left;
     border-color: #4CAF50;
     color: green;
+    z-index:50;
+    size: 36px;
   }
     #lightside:hover {
         background: green;
@@ -81,6 +83,8 @@ caption {
 #darkside {
     border-color: crimson;
     color: crimson;
+    z-index:50;
+    size: 36px;
   }
     #darkside:hover {
         background: crimson;
@@ -108,4 +112,18 @@ li a {
 .logo {
     width: 55px;
     height: 55px;
+}
+textarea {
+    background-color: grey;    
+}
+#troll_button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 18px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
 }

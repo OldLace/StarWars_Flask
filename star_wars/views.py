@@ -17,13 +17,13 @@ def index():
 
 @app.route('/trilogy', methods = ['GET', 'POST'])
 def trilogy():
-    
     return render_template('trilogy.html')
 
 @app.route('/prequels')
 def prequels():
     return render_template('prequels.html')
 
-@app.route('/discussion', methods = ['GET', 'POST'])
+@app.route('/discussion', methods = ['POST'])
 def forum():
-    return render_template('discussion.html',)
+    comment = request.form['comment']
+    return render_template('discussion.html', comment = comment)
