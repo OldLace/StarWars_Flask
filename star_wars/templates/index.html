@@ -22,7 +22,7 @@
     <h2>My favorite Star Wars movie is {{empire['title']}}</h2>
 <table width:100%>  
     <tr>
-        <caption>The Films of the Star Wars Universe</caption>
+        <caption>🌟 The Films of the Star Wars Universe 🌟</caption>
     </tr> 
   {% for i in range(length): %}
   <td>  {%  print(film_data[i]['title']) %}</td>
@@ -30,12 +30,18 @@
 </table>
     <!-- <a href="/about">about</a>    -->
     <br>
-        <table>
-            <form method="post" action="/second">
-                <input type="text" name="favorite">
-                <br><br>
-                <button class="btn success" value="Submit">Success</button>
+    <div id="enter">
+            <form method="post" action="/trilogy">
+                <button id="lightside" class="btn success" value="Submit">Proceed</button>
             </form>
-        </table> 
+    </div>
+
+    <div id="enter_dark">
+            <form method="post" action="/prequels">
+                <button id="darkside" class="btn success" value="Submit">Proceed</button>
+            </form>
+    </div>
+
+
 </body>
 </html>

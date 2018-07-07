@@ -34,9 +34,11 @@ background-image {
     margin-right: auto;
     text-align: center;
 }
-.button {
-    background-color: #4CAF50;
-    size: 24px;
+
+button {
+    z-index:50;
+    /* background-color: #4CAF50; */
+    size: 36px;
 }
 
 .btn {
@@ -48,10 +50,39 @@ background-image {
     font-size: 16px;
     cursor: pointer;
 }
-.success {
+#lightside {
+    float: left;
     border-color: #4CAF50;
     color: green;
   }
-    .success:hover {
-        background: crimson;
+    #lightside:hover {
+        background: green;
+        color:whitesmoke
   }
+
+  table {
+      width:100%;
+      padding: 35px;
+      font-size: 24px;
+  }
+
+#enter {
+    position: relative;
+}
+
+caption {
+    color:red
+    font-size: 20px;
+}
+
+#enter_dark {
+    float: right;
+}
+#darkside {
+    border-color: crimson;
+    color: crimson;
+  }
+    #darkside:hover {
+        background: crimson;
+        color:whitesmoke
+}

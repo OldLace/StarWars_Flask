@@ -14,6 +14,15 @@ def index():
     length = len(film_data)
     return render_template('/index.html', film_data = film_data, empire = empire, length = length)
 
+
+@app.route('/trilogy', methods = ['GET', 'POST'])
+def trilogy():
+    return render_template('trilogy.html')
+
+@app.route('/prequels')
+def prequels():
+    return render_template('prequels.html')
+
 # @app.route('/ten', methods = ['GET', 'POST'])
 # def ten():
 #     req = requests.get(url="https://pokeapi.co/api/v2/pokemon-form/")
